@@ -5,6 +5,10 @@ on:
     branches:
       - "**"
 
+  release:
+    types:
+      - published
+
 env:
   CONTAINER_REPOSITORY: quay.io/wout_slaets # PUT YOUR OWN USERNAME HERE
   CONTAINER_IMAGE: alm_workshop
