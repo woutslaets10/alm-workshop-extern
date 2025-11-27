@@ -19,14 +19,14 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: quay.io
-          username: <<TODO>>
-          password: <<TODO>>
+          username: wout_slaets+wout_s_robot
+          password: LXTHE8KS2A957S3L4C362X3KRKZ25FFOXWE6A1DGYA41FCYL8JKS9DCABOKDK94J
 
       - name: Extract metadata (tags, labels) for Docker
         uses: docker/metadata-action@v4
         id: meta
         with:
-          images: <<TODO>>
+          images: quay.io/wout_slaets/alm-workshop
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
