@@ -11,7 +11,7 @@ env:
 
 jobs:
   deploy:
-    if: # ADD YOUR CONDITION HERE
+    if: github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/tst'
     environment: development
     runs-on: ubuntu-22.04
     steps:
