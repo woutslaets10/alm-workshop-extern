@@ -26,6 +26,9 @@ spec:
           # TODO: Update image to your image
           image: quay.io/wout_slaets/alm_workshop:tst
           imagePullPolicy: Always
+          env:
+            - name: DEFAULT_SWEATERSCORE
+              value: "5"
           ports:
             - containerPort: 3000
               protocol: TCP
